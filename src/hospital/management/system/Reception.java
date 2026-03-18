@@ -45,6 +45,7 @@ public class Reception extends JFrame {
         btn1.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                new NEW_PATIENT();
 
             }
         });
@@ -56,6 +57,7 @@ public class Reception extends JFrame {
         btn2.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                new Room();
 
             }
         });
@@ -67,7 +69,7 @@ public class Reception extends JFrame {
         btn3.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
+                new Department();
             }
         });
 
@@ -78,6 +80,7 @@ public class Reception extends JFrame {
         btn4.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                new Employee_info();
 
             }
         });
@@ -89,7 +92,7 @@ public class Reception extends JFrame {
         btn5.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
+                new All_Patient_Info();
             }
         });
 
@@ -100,7 +103,7 @@ public class Reception extends JFrame {
         btn6.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
+                new patient_discharge();
             }
         });
 
@@ -111,7 +114,7 @@ public class Reception extends JFrame {
         btn7.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
+              new update_patient_details();
             }
         });
 
@@ -122,18 +125,18 @@ public class Reception extends JFrame {
         btn8.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
+             new Ambulance();
             }
         });
 
         JButton btn9 = new JButton("Search Room");
-        btn9.setBounds(510,58,200,30);
+        btn9.setBounds(510,100,200,30);
         btn9.setBackground (new Color(246,215,118));
         panel1.add(btn9);
         btn9.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
+             new SearchRoom();
             }
         });
 
@@ -145,15 +148,18 @@ public class Reception extends JFrame {
         btn10.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
+             setVisible(false);
+             new login();
             }
         });
+
         setSize(1950,1050);
         getContentPane().setBackground(Color.WHITE);
         setLayout(null);
         setVisible(true);
     }
     public static void main (String[] args){
+
         new Reception();
     }
 }

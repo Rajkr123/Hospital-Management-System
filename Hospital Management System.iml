@@ -19,5 +19,6 @@
       </library>
     </orderEntry>
     <orderEntry type="library" name="mysql-connector-java-8.0.28" level="project" />
+    <orderEntry type="library" name="ResultSet2xml" level="project" />
   </component>
 </module>

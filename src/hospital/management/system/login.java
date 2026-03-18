@@ -51,11 +51,11 @@ public class login extends JFrame implements ActionListener {
             add(jPasswordField);
 
 
-            ImageIcon imageIcon = new ImageIcon(ClassLoader.getSystemResource( "icon/login.png"));
+            ImageIcon imageIcon = new ImageIcon(ClassLoader.getSystemResource( "icon/doctor.png"));
             Image i1 = imageIcon.getImage().getScaledInstance(400,400,Image.SCALE_DEFAULT);
             ImageIcon imageIcon1 = new ImageIcon(i1);
             JLabel label = new JLabel(imageIcon);
-            label.setBounds(320,-30,400,300);
+            label.setBounds(320,-30,400,400);
             add(label);
 
             b1 = new JButton("LOGIN");
